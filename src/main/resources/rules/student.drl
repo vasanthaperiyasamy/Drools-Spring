@@ -1,0 +1,19 @@
+package rules;
+
+import com.javainuse.model.Student;
+
+rule "student result" 
+	when 
+	   stuObj:Student(mark < 40 ,stuName:name) 
+	
+	then 
+	    stuObj.setResult("Fail");
+	end 
+
+rule "student pass" 
+	when 
+	   stuObj:Student(mark > 40 ,stuName:name) 
+	
+	then 
+	    stuObj.setResult("pass");
+	end 

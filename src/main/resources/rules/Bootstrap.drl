@@ -1,0 +1,49 @@
+
+import com.javainuse.model.State
+import function com.javainuse.service.WriteHello.sayHello;
+
+
+dialect "java"
+
+rule "Bootstrap"
+
+	when
+		stateObj:State(name=="A" , state==State.NOTRUN)
+	then
+		
+		stateObj.setState(State.FINISHED);
+		update(stateObj);
+		sayHello(drools);
+	end
+	
+rule "A to B"
+
+	when
+		State(name=="A",state==State.FINISHED)
+		stateObjA:State(name=="B" , state==State.NOTRUN)
+	then
+		
+		stateObjA.setState(State.FINISHED);
+		update(stateObjA);
+	end
+	
+rule "B to C" salience 5
+
+	when
+		State(name=="B",state==State.FINISHED)
+		stateObjB:State(name=="C" , state==State.NOTRUN)
+	then
+		
+		stateObjB.setState(State.FINISHED);
+		update(stateObjB);
+	end
+	
+	rule "B to D"	
+	when
+		State(name=="B",state==State.FINISHED)
+		stateObjC:State(name=="D" , state==State.NOTRUN)
+	then
+		
+		stateObjC.setState(State.FINISHED);
+		update(stateObjC);
+	end

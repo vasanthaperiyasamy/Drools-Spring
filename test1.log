@@ -1,0 +1,40 @@
+<object-stream>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Bootstrap [1]</activationId>
+  <rule>Bootstrap</rule>
+  <declarations>stateObj=com.javainuse.model.State@3b956878(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>1</factId>
+  <objectToString>com.javainuse.model.State@3b956878</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>2</factId>
+  <objectToString>com.javainuse.model.State@5ce33a58</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>3</factId>
+  <objectToString>com.javainuse.model.State@4264b240</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>4</factId>
+  <objectToString>com.javainuse.model.State@5b04476e</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Bootstrap [1]</activationId>
+  <rule>Bootstrap</rule>
+  <declarations>stateObj=com.javainuse.model.State@3b956878(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Bootstrap [1]</activationId>
+  <rule>Bootstrap</rule>
+  <declarations>stateObj=com.javainuse.model.State@3b956878(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+</object-stream>
